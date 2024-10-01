@@ -1,11 +1,13 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Ensure the DOM is fully loaded before adding event listeners
+   
     const submitButton = document.getElementById('submit');
     
     if (submitButton) {
         submitButton.addEventListener('click', calculateResult);
     }
 
+
+    
     function calculateResult() {
         let answers = document.querySelectorAll('input[type="radio"]:checked');
         
@@ -29,7 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
             genreCounts[answer.value]++;
         });
 
-        // Determine the preferred genre based on maximum count
+     
         
         let maxCount = Math.max(...Object.values(genreCounts));
         let preferredGenres = [];
@@ -39,8 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         }
 
-
-        // Object containing arrays of image URLs for each genre
+      
         const genreImages = {
             romance: [
                 'https://upload.wikimedia.org/wikipedia/en/8/86/Posternotebook.jpg',
@@ -151,17 +152,17 @@ document.addEventListener('DOMContentLoaded', () => {
             ]
         };
 
-        // Find the result div and result images div
+        
         let resultDiv = document.getElementById('result');
         let resultImagesDiv = document.getElementById('resultImages');
         
-        // Check if resultImagesDiv exists
+        
         if (!resultImagesDiv) {
             alert("Result images container not found.");
             return;
         }
 
-        // Clear previous images
+       
         resultImagesDiv.innerHTML = '';
 
         
@@ -178,7 +179,16 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
 
-        // Show the result div
+        
         resultDiv.style.display = 'block';
     }
 });
+
+function showPopup() {
+    alert("Katia Jacoby, a movie connoisseur, will not recommend a movie she has not seen and approved. She is known among her family and friends of Ohio to have the most elite taste in film. Do not take these recommendations with a grain of salt.");
+}
+
+function changeDisplay() {
+    document.getElementById("first-page").style.display = "none";
+    document.getElementById("second-page").style.display = "block";
+}
