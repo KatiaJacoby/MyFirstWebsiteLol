@@ -1,0 +1,98 @@
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-image:url('https://cdn.openart.ai/published/Z7JQy3xW9aJK3SY471q7/7dU2KOeB_fVd8_1024.webp');
+    background-size: 100% 100%;
+
+}
+
+.title{
+    color: white;
+}
+
+.container{
+    align-items: center;
+    width: 100%
+
+}
+
+.quiz {
+    width: 80%; /* Adjusted width for better centering */
+    max-width: 600px; /* To limit the quiz's max width on large screens */
+    margin: 50px auto; /* Center the quiz horizontally and add vertical spacing */
+    padding: 20px;
+    border-radius: 20px; /* Adjusted the border-radius for better aesthetics */
+    box-shadow: 0 0 10px rgba(198, 222, 60, 0.2);
+    color: white;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.6); /* Added background color to improve readability */
+
+
+}
+
+h1{
+    text-align: center;
+    color: #ffffff;
+}
+
+#question {
+    margin-bottom: 20px;
+}
+
+#options {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align the options to the left */
+    gap: 10px;
+    margin: 0 auto; /* Center the options container */
+    width: 100%; /* Make sure it uses full available width */
+}
+
+#options input[type="radio"] {
+    margin-right: 10px;
+}
+
+button {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px;
+    background-color: rgb(227,238,10),245,161;
+    color: #131313;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #8f8d8d;
+}
+
+#result {
+    display: none; /* Initially hidden */
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Style images within the result section */
+#resultImages {
+    display: grid; /* Use grid layout for rows */
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Responsive grid */
+    gap: 10px; /* Space between images */
+    justify-items: center; /* Center images in grid cells */
+}
+
+#resultImages img {
+    width: 100px; /* Set a fixed width */
+    height: 100px; /* Set a fixed height for uniformity */
+    object-fit: cover; /* Ensures the image fits without distortion */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+#resultImages img:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+

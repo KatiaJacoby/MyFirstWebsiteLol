@@ -1,0 +1,63 @@
+body {
+    background-image: url('https://i.pinimg.com/564x/f8/c8/ff/f8c8ff3194023a826f1a60c4c7610c45.jpg');
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-size: 100% 100%;
+}
+
+.greeting {
+    color: rgb(233, 222, 222);
+    text-align: center;
+}
+
+.centeringbutton {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    
+}
+
+.centeringcredentials {
+    text-align: center;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+
+#credentials{
+    background-color: #dd67ea;
+    background-image: linear-gradient(1deg, #ecb5f7, #e671ed 99%);
+    color: #f5ecec;
+}
+
+.personalitybutton {
+  appearance: none;
+  background-color: #d71beb;
+  background-image: linear-gradient(1deg, #ecb5f7, #e671ed 99%);
+  background-size: calc(100% + 20px) calc(100% + 20px);
+  border-radius: 50px;
+  border-width: 0;
+  box-sizing: border-box;
+  color: #f5ecec;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: CircularStd,sans-serif;
+  font-size: 1rem;
+  height: auto;
+  justify-content: center;
+  line-height: 1.5;
+  padding: 10px 5px;
+  position: relative;
+  text-align: center;
+  transition: background-color .2s,background-position .2s;
+  touch-action: manipulation;
+  white-space: nowrap;
+  box-shadow: rgba(238, 185, 247, 0.25) 0 0 0 .125em;
+  
+
+}
+
